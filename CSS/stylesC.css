@@ -1,11 +1,178 @@
-:root{
---black:#1a1d1f;
---dark-teal: #072a36;
---light-blue: #a4c3c6;
---ligher-blue: #ebf5f5;
+@import url('./index.css');
+@import url('./mission.css');
+@import url('./workshop.css');
+@import url('./contact.css');
 
---purple: #5e3a4d;
---teal: #00596b;
---red: #b04022;
---off-white: #fff5e4; 
+
+/* color variables */
+:root {
+    --black: #1a1d1f;
+    --dark-teal: #072a36;
+    --light-blue: #a4c3c6;
+    --ligher-blue: #ebf5f5;
+
+    --purple: #5e3a4d;
+    --teal: #00596b;
+    --red: #b04022;
+    --off-white: #fff5e4;
+}
+
+/* font variables */
+h1 {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 4.375em;
+    font-weight: normal;
+    margin-bottom: 0.313em;
+    color: var(--black);
+}
+
+h2 {
+    font-family: "Poppins", sans-serif;
+    color: var(--black);
+    padding: 0 2em 0 2em;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    color: var(--black);
+    line-height: 1.5em;
+    padding: 0 1em 0 1em;
+}
+
+/* reset */
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: var(--ligher-blue);
+    margin: 0 auto;
+}
+
+/* nav */
+#main-nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--dark-teal);
+    padding: 1em;
+}
+
+#main-nav a {
+    display: flex;
+    align-items: center;
+    color: var(--off-white);
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+#main-nav a h2 {
+    font-weight: bolder;
+}
+
+#main-nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    margin: 0 1.25em;
+    padding: 0;
+}
+
+#main-nav ul li {
+    padding: 0.5em;
+    background-color: var(--ligher-blue);
+    border-radius: 8px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 5.5em;
+    text-align: center;
+}
+
+#main-nav ul li a {
+    color: var(--dark-teal);
+    font-weight: 500;
+}
+
+#disco-logo {
+    width: 6.25em;
+}
+
+/* hero */
+.hero h1 {
+    text-align: center;
+    font-size: 4.735em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    color: var(--dark-teal);
+}
+
+.hero .hero-image {
+    display: block;
+    margin: 0 auto;
+    height: 12.5em;
+    max-width: auto;
+}
+
+/* content section */
+.content-section {
+    margin: 3.75em 2.5em;
+}
+
+.content-section .card {
+    display: flex;
+    align-items: flex-start;
+    gap: 2.5em;
+}
+
+.content-section .card .card-image img {
+    border-radius: 1.875em;
+}
+
+.content-section .card .card-content {
+    background-color: var(--light-blue);
+    color: var(--black);
+    border-radius: 20px;
+    margin: 0 0 0 0;
+}
+
+/* footer */
+.scroll-to-top {
+    text-align: center;
+    margin: 1em;
+}
+
+.scroll-to-top a {
+    display: inline-block;
+    background-color: var(--black);
+    color: var(--ligher-blue);
+    font-family: "Montserrat", sans-serif;
+    font-size: 14pt;
+    padding: 1em;
+    border-radius: 20px;
+    text-decoration: none;
+    color: var(--ligher-blue);
+}
+
+.scroll-to-top a:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+footer {
+    background-color: var(--black);
+    gap: 0.625em;
+    padding: 2.75em 1.5em;
+    max-width: 112.5em;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer p {
+    color: var(--ligher-blue);
+}
+
+footer a {
+    text-decoration: underline;
+    color: var(--red);
 }
