@@ -66,8 +66,8 @@ body {
     text-decoration: none;
 }
 
-#main-nav a h2 {
-    font-weight: bolder;
+#main-nav a strong {
+    font-size: x-large;
 }
 
 #main-nav ul {
