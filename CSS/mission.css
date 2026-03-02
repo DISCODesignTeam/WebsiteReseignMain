@@ -1,0 +1,17 @@
+.content-section.content-section--grid {
+    gap: 2.5em;
+}
+
+.card.card--reverse {
+    flex-direction: row-reverse;
+}
+
+.card-image-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.card-image-stack .card-image {
+    flex: 0 0 auto;
+}
