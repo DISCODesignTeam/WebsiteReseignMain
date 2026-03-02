@@ -118,6 +118,7 @@ body {
 /* content section */
 .content-section {
     display: flex;
+    justify-content: center;
     margin: 3.75em 2.5em;
 }
 

@@ -1,0 +1,49 @@
+.credits-section {
+    margin: 0 auto;
+    padding: 0 2.5em 3.75em 2.5em;
+    max-width: 65em;
+}
+
+.credits-section h2 {
+    text-align: center;
+    font-size: 5em;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+.credits-section h3 {
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+}
+
+#team .team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 2em;
+}
+
+#team .team-grid .team-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#team .team-grid .team-card span {
+    padding: 0;
+    margin-bottom: 1em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.25em;
+    color: var(--black);
+}
+
+#team .team-grid .team-card img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 8px;
+}
