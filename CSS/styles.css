@@ -9,7 +9,7 @@
     --black: #1a1d1f;
     --dark-teal: #072a36;
     --light-blue: #a4c3c6;
-    --ligher-blue: #ebf5f5;
+    --lighter-blue: #ebf5f5;
 
     --purple: #5e3a4d;
     --teal: #00596b;
@@ -37,7 +37,7 @@ p {
     font-family: "Montserrat", sans-serif;
     color: var(--black);
     line-height: 1.5em;
-    padding: 0 1em;
+    padding: 0 2em;
 }
 
 /* reset */
@@ -46,7 +46,7 @@ ul {
 }
 
 body {
-    background-color: var(--ligher-blue);
+    background-color: var(--light-blue);
     margin: 8px;
 }
 
@@ -80,7 +80,7 @@ body {
 
 #main-nav ul li {
     padding: 0.5em;
-    background-color: var(--ligher-blue);
+    background-color: var(--lighter-blue);
     border-radius: 8px;
     flex: 1;
     display: flex;
@@ -132,7 +132,7 @@ body {
 }
 
 .content-section .card .card-content {
-    background-color: var(--light-blue);
+    background-color: var(--lighter-blue);
     color: var(--black);
     border-radius: 20px;
     margin: 0;
@@ -151,13 +151,13 @@ body {
 .scroll-to-top a {
     display: inline-block;
     background-color: var(--black);
-    color: var(--ligher-blue);
+    color: var(--lighter-blue);
     font-family: "Montserrat", sans-serif;
     font-size: 14pt;
     padding: 1em;
     border-radius: 20px;
     text-decoration: none;
-    color: var(--ligher-blue);
+    color: var(--lighter-blue);
 }
 
 .scroll-to-top a:hover {
@@ -174,7 +174,7 @@ footer {
 }
 
 footer p {
-    color: var(--ligher-blue);
+    color: var(--lighter-blue);
 }
 
 footer a {
