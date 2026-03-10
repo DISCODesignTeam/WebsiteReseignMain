@@ -29,6 +29,7 @@
                     <strong>D.I.S.C.O</strong>
                 </a>
             </div>
+            <button id="menu-toggle" aria-label="Toggle Navigation Menu">☰</button>
             <ul>
                 <li><a href="./mission.html">Mission</a></li>
                 <li><a href="./workshop.html">Workshop</a></li>
@@ -43,7 +44,7 @@
         </section>
 
         <nav class="sub-nav" aria-label="Workshop sections">
-            <ul>
+            <ul class="nav-links">
                 <li><a href="#crew-persona-cards">Crew Persona Cards</a></li>
                 <li><a href="#ship-cards">Ship Cards</a></li>
                 <li><a href="#rulebook">Rulebook</a></li>
@@ -216,5 +217,13 @@
         </p>
     </footer>
 </body>
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+</script>
 
 </html>

@@ -119,3 +119,36 @@
     border-radius: 8px;
     font-family: 'Montserrat', sans-serif;
 }
+
+@media (max-width: 768px) {
+    .sub-nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+        padding: 2em 1em;
+    }
+
+    .sub-nav ul li {
+        width: 100%;
+        max-width: none;
+    }
+
+    #crew-persona-cards .persona-card {
+        flex: 0 1 calc(50% - 1em);
+        max-width: calc(50% - 1em);
+    }
+
+    #ship-cards .ship-cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #rulebook .rulebook-resources {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #rulebook .rulebook-resources .resource-card {
+        width: 100%;
+        max-width: none;
+    }
+}

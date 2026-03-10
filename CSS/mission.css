@@ -15,3 +15,9 @@
 .card-image-stack .card-image {
     flex: 0 0 auto;
 }
+
+@media (max-width: 768px) {
+    .content-section.content-section--grid {
+        flex-direction: column;
+    }
+}
