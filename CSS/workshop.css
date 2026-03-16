@@ -51,21 +51,6 @@
     max-width: calc(33.333% - 1.5em);
 }
 
-.persona-card span {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 1.25em;
-    color: var(--black);
-}
-
-.persona-card img {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
 #ship-cards .ship-cards-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -82,7 +67,25 @@
     align-items: center;
 }
 
-#ship-cards a {
+.persona-card span {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5em;
+}
+
+.persona-card span a {
+    color: var(--red);
+    text-decoration: none;
+}
+
+.persona-card img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+#general-ship-systems {
     display: block;
     width: fit-content;
     margin-left: auto;
