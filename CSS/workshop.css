@@ -1,0 +1,167 @@
+.sub-nav ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 5em 0 0 0;
+    gap: 2em;
+}
+
+.sub-nav ul li {
+    padding: 1em 0.5em;
+    background-color: var(--dark-teal);
+    border-radius: 8px;
+    flex: 1;
+    align-items: center;
+    min-width: 5.5em;
+    max-width: 12em;
+    text-align: center;
+}
+
+.sub-nav ul li a {
+    color: var(--lighter-blue);
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+.workshop-section {
+    margin: 0 auto;
+    padding: 3.75em 2.5em;
+    max-width: 65em;
+}
+
+#crew-persona-cards .persona-cards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+}
+
+.workshop-section h2,
+.workshop-section p {
+    padding: 0;
+    margin-bottom: 1em;
+}
+
+#crew-persona-cards .persona-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    flex: 0 1 calc(33.333% - 1.5em);
+    max-width: calc(33.333% - 1.5em);
+}
+
+#ship-cards .ship-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    margin: 2em 0;
+    max-width: 40em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#ship-cards .persona-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em
+}
+
+.persona-card span {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1em;
+    min-height: 2em; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.persona-card span a {
+    color: var(--red);
+    text-decoration: none;
+}
+
+.persona-card .background {
+    background-color: var(--off-white);
+    border-radius: 8px;
+    padding: 1em;
+}
+
+.persona-card .background img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+#general-ship-systems {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    padding: 1em 2.5em;
+    background-color: var(--dark-teal);
+    color: var(--lighter-blue);
+    border-radius: 8px;
+    margin-top: 2em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#rulebook .rulebook-resources {
+    display: flex;
+    gap: 2em;
+    justify-content: space-around;
+}
+
+#rulebook .rulebook-resources .resource-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(33.333% - 1.5em);
+}
+
+#rulebook .rulebook-resources .resource-card a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 1em 1.5em;
+    background-color: var(--dark-teal);
+    color: var(--lighter-blue);
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 768px) {
+    .sub-nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+        padding: 2em 1em;
+    }
+
+    .sub-nav ul li {
+        width: 100%;
+        max-width: none;
+    }
+
+    #crew-persona-cards .persona-card {
+        flex: 0 1 calc(50% - 1em);
+        max-width: calc(50% - 1em);
+    }
+
+    #ship-cards .ship-cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #rulebook .rulebook-resources {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #rulebook .rulebook-resources .resource-card {
+        width: 100%;
+        max-width: none;
+    }
+}

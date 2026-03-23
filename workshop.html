@@ -29,7 +29,8 @@
                     <strong>D.I.S.C.O</strong>
                 </a>
             </div>
-            <ul>
+            <button id="menu-toggle" aria-label="Toggle Navigation Menu">☰</button>
+            <ul class="nav-links">
                 <li><a href="./mission.html">Mission</a></li>
                 <li><a href="./workshop.html">Workshop</a></li>
                 <li><a href="./contact.html">Contact</a></li>
@@ -43,7 +44,7 @@
         </section>
 
         <nav class="sub-nav" aria-label="Workshop sections">
-            <ul>
+            <ul class="nav-links">
                 <li><a href="#crew-persona-cards">Crew Persona Cards</a></li>
                 <li><a href="#ship-cards">Ship Cards</a></li>
                 <li><a href="#rulebook">Rulebook</a></li>
@@ -61,36 +62,73 @@
                 are hired to which roles. Which areas on your ship will their needs be most relevant to?</p>
             <div class="persona-cards-grid">
                 <article class="persona-card">
-                    <span>NAME</span>
-                    <img src="./assets/placeholder.png"></img>
+                    <span>
+                        <a href="https://docs.google.com/document/d/1Z8VvsYWxMqIBCDnGNGSlwWi1lJTfNQCpLH7Ve0UwLL8/edit?usp=sharing"
+                            target="blank" class="link-to-page"><strong>View Surussation's Card [p1]</strong>
+                        </a>
+                    </span>
+                    <div class="background">
+                        <img src="./assets/crew_persona/surrussation.png"
+                            alt="Surussation, a Grunk, stares wide-eyed at the viewer holding a paper map. Their body is a neon red circle with tan dots. Two eye stalks poke out the top of their body to hold up their eyes, and two flat, feet-like flippers extend from the bottom of their body. They also have some small arms extending around the base of their body.">
+                    </div>
                 </article>
                 <article class="persona-card">
-                    <span>NAME</span>
-                    <img src="./assets/placeholder.png"></img>
+                    <span><a href="https://docs.google.com/document/d/1B2EioHDUFDXtNtvkF4jcS12VMVHmTBXZO7nDFD3pYdA/edit?usp=sharing"
+                            target="blank" class="link-to-page"><strong>View Garick and Parsley's Cards <br> [p2 &amp;
+                                sc1]</strong></a></span>
+                    <div class="background">
+                        <img src="./assets/crew_persona/garrick_and_parsley.png"
+                            alt="Garick is seated in their wheelchair, looking back at the viewer, alongside Parsley, their service otter. Garick has dark skin, and thick, light-gray dreadlocks. Their blazer, tie, shoes, and wheelchair have patterned spots of vibrant colors. The rest of their chair is shaded in cooler purple and gray tones. They have a slight smirk and tiny oval glasses. Parsley holds a pencil with her tail and a small rock between her paws. She has tiny facial features, including a cute button nose and wide dark eyes.">
+                    </div>
                 </article>
                 <article class="persona-card">
-                    <span>NAME</span>
-                    <img src="./assets/placeholder.png"></img>
+                    <span><a href="https://docs.google.com/document/d/1EQuDv4naRRQFika87NT3lIJ8lQLUwIXH0BmNaym1_zE/edit?usp=sharing"
+                            target="blank" class="link-to-page"><strong>View Halea Silver's Card
+                                [p3]</strong></a></span>
+                    <div class="background">
+                        <img src="./assets/crew_persona/halea_silver.png"
+                            alt="Halea Silver, a sentient plant, is shown with long, flowing leaves extending from their egg-shaped body. On the front of their body, a red bulb breaks through the leaves, which features a pattern that almost resembles a face, even though Halea Silver has no facial features. Light from above illuminates their red bulb and upper leaves, the lower leaves being cast in a shadow.">
+                    </div>
                 </article>
                 <article class="persona-card">
-                    <span>NAME</span>
-                    <img src="./assets/placeholder.png"></img>
+                    <span><a href="https://docs.google.com/document/d/1Spy3WA2U0u4HuxDCr-IzGaYLlbIIXd2-D1qKtRmD0Xo/edit?usp=sharing"
+                            target="blank" class="link-to-page"><strong>View Beebul's Card [p4]</strong></a></span>
+                    <div class="background">
+                        <img src="./assets/crew_persona/beebul.png"
+                            alt="Beebul, their body resembling a jellyfish, sits upside-down inside their transparent orb, which is kept stable by a gold ring surrounding its equator. Some of their bright pink tentacles extend outside the malleable orb. The orb is shaded in light blue, and light from outside casts bright white highlights on its surface. Around Beebul’s head, there is a soft yellow glow which extends into the orb.">
+                    </div>
                 </article>
                 <article class="persona-card">
-                    <span>NAME</span>
-                    <img src="./assets/placeholder.png"></img>
+                    <span><a href="https://docs.google.com/document/d/1kbQJMzeVeT-60Loxe7EwzRFonx4Qf4sfsrQJW_FHJJs/edit?usp=sharing"
+                            target="blank" class="link-to-page"><strong>View Maeve's Card [p5]</strong></a></span>
+                    <div class="background">
+                        <img src="./assets/crew_persona/maeve.png"
+                            alt="Maeve, a wyvern, sits perched on a shiny metal chest, colorful gems surrounding it. She is turned slightly to one side, her eyes pointed toward the viewer, with a slight smirk across her face. Her wings and tail resemble those of a dragon, and she is colored with dark orange and gold, as well as light blue highlights.">
+                    </div>
                 </article>
                 <article class="persona-card">
-                    <span>NAME</span>
-                    <img src="./assets/placeholder.png"></img>
+                    <span><a href="https://docs.google.com/document/d/1claYR5zhNAxwf8vGjn8wJ0yRN0Npq8wc8b9eHOPXmXU/edit?usp=sharing"
+                            target="blank" class="link-to-page"><strong>View Bry-Ann-Dee's Card [p6]</strong></a></span>
+                    <div class="background">
+                        <img src="./assets/crew_persona/bry-ann-dee.png"
+                            alt="Bry-Ann-Dee is one rock colony, all of which is pictured here. The rock itself is in the shape of a bowl, with six stabilizing legs extending from its bottom. The textured rock is decorated with many shiny pink and purple crystals, which extend from its side and its surface. On the surface are three holes, out of which Bry, Ann, and Dee extend (from left to right). Bry is light yellow, wears red glasses, and has a slight smile. Ann is pale orange and has wide, dark eyes and a smile. Dee is pale pink with thick eyebrows and a smirk. All three creatures have skinny necks extending from the rock, wider faces branching out from their necks, and stringy hair-like limbs extending from their heads.">
+                    </div>
                 </article>
                 <article class="persona-card">
-                    <span>NAME</span>
-                    <img src="./assets/placeholder.png"></img>
+                    <span><a href="https://docs.google.com/document/d/1m8TgoXJbZ2mHgGY_sha6UxL-nhGy_rXwMzBbmz1QM5M/edit?usp=sharing"
+                            target="blank" class="link-to-page"><strong>View Robit's Card [p7]</strong></a></span>
+                    <div class="background">
+                        <img src="./assets/crew_persona/robit_&_rorobytes.png"
+                            alt="Robit, a robot resembling a cat, stands proudly on four malleable robot legs. Her eyes are two long back slits. Her body resembles a computer chip, with circuits lining her face and stomach. Her tail, similar in nature to her legs, but with a plug on the end, extends behind her. Several rorobytes are attached to her body and face, with smiling expressions, and their small legs and arms extending outward.">
+                    </div>
                 </article>
                 <article class="persona-card">
-                    <span>NAME</span>
-                    <img src="./assets/placeholder.png"></img>
+                    <span><a href="https://docs.google.com/document/d/1E9aIFlLCJQs-RvQONop21ipQ4J_JHBVrfq4-wttOgUM/edit?usp=sharing"
+                            target="blank" class="link-to-page"><strong>View Whirry's Card [p8]</strong></a></span>
+                    <div class="background">
+                        <img src="./assets/crew_persona/whirry.png"
+                            alt="Whirry, a robot, is shown with his eyes half shut, indicating a smiley expression. He has no other facial features, but does have a few buttons beside his face. A small antenna extends from his head, with small lines indicating its reception of data. He has small wheels for feet, and long bendable arms. His dark green body is covered in colorful stickers, including a rainbow and smiley face.">
+                    </div>
                 </article>
             </div>
         </section>
@@ -105,20 +143,37 @@
             </p>
             <div class="ship-cards-grid">
                 <article class="persona-card">
-                    <span>NAME</span>
-                    <img src="./assets/placeholder.png"></img>
+                    <span><a href="https://docs.google.com/document/d/1ExjOxkV6oYqmBM0cWqRFWd5tEPPgKEjOuQBJa1fnnkA/edit?usp=sharing"
+                            target="blank" class="link-to-page"><strong>View the Pirate Ship [s1]</strong></a></span>
+                    <div class="background">
+                        <img src="./assets/ship_deck/smuggler_ship.png"
+                            alt="The body of this ship resembles a feather, with a spiraling path surrounding the outside of the ship. The body of the ship is colored in a pastel light blue, and the fibers in the feather are drawn with light strokes.">
+                    </div>
                 </article>
                 <article class="persona-card">
-                    <span>NAME</span>
-                    <img src="./assets/placeholder.png"></img>
+                    <span><a href="https://docs.google.com/document/d/1zTA5UiV0E3Cnw1su6x71biDfXIXjN-3VSRnCI2E_Ix0/edit?usp=sharing"
+                            target="blank" class="link-to-page"><strong>View the Cruise Ship [s2]</strong></a></span>
+                    <div class="background">
+                        <img src="./assets/ship_deck/cruise_ship.png"
+                            alt="A vibrant and brightly colored ship in the shape of a large whale. A large blue window looks into the front of the ship. The fins and tail of the ship are decorated with hand drawn patterns and bright shades of gold and red.">
+                    </div>
                 </article>
                 <article class="persona-card">
-                    <span>NAME</span>
-                    <img src="./assets/placeholder.png"></img>
+                    <span><a href="https://docs.google.com/document/d/1JXSe-7A63YKRLrMLDp8-PGF6puiEcDwQKst0piBy1cw/edit?usp=sharing"
+                            target="blank" class="link-to-page"><strong>View the Emergency Relief
+                                [s3]</strong></a></span>
+                    <div class="background">
+                        <img src="./assets/ship_deck/emergency_relief_ship.png"
+                            alt="A vibrantly blue ship in the shape of a jellyfish. The main body of the ship is cast in a light blue shadow, and the transparent membrane surrounding it allows us to see the “brain” of the ship. The outer rim of the body is decorated with red first aid symbols. Each tentacle, extending from the bottom of the ship, features a tool for rescue.">
+                    </div>
                 </article>
                 <article class="persona-card">
-                    <span>NAME</span>
-                    <img src="./assets/placeholder.png"></img>
+                    <span><a href="https://docs.google.com/document/d/18qN7NB5zuasfdVCEU5k5ZkF4w5h_YSuL9yVwrwc54h0/edit?usp=sharing"
+                            target="blank" class="link-to-page"><strong>View the Education Ship [s4]</strong></a></span>
+                    <div class="background">
+                        <img src="./assets/ship_deck/education_ship.png"
+                            alt="The body of this ship resembles a feather, with a spiraling path surrounding the outside of the ship. The body of the ship is colored in a pastel light blue, and the fibers in the feather are drawn with light strokes.">
+                    </div>
                 </article>
             </div>
             <p>
@@ -130,8 +185,8 @@
                 alongside spaces from your Ship Type card. (The exact number, and which ones, depends on your workshop
                 group size: your jam facilitator will tell you.)
             </p>
-            <a href="https://drive.google.com/drive/folders/1P38Bt3785s7sPCTCe9etnAaIfA0ZbNf8" target="_blank"
-                rel="noopener noreferrer">General Ship Systems</a>
+            <a id="general-ship-systems" href="https://drive.google.com/drive/folders/1P38Bt3785s7sPCTCe9etnAaIfA0ZbNf8"
+                target="_blank" rel="noopener noreferrer">General Ship Systems</a>
         </section>
         <section id="rulebook" class="workshop-section">
             <h2>DISCO Rulebook:</h2>
@@ -143,38 +198,47 @@
             </p>
             <div class="rulebook-resources">
                 <article class="resource-card">
-                    <a href="https://docs.google.com/document/d/1kgbeUvrwBRrcuPXXCXBAikLmyJdEjXOxICldLL28oZQ"
-                        target="_blank" rel="noopener noreferrer">Intro Manual</a>
-                    <p>
-                        This manual is designed to <strong>inform workshop leaders on what the DISCO is,</strong>
-                        provide some background
-                        knowledge on speculative fiction and inclusive design (as well as further suggested readings),
-                        and <strong>explain how to facilitate a DISCO jam</strong> with the help of this toolkit. It
-                        also provided a full
-                        introduction to toolkit materials.
-                    </p>
+                    <div class="resource-card-content">
+                        <a href="https://docs.google.com/document/d/1kgbeUvrwBRrcuPXXCXBAikLmyJdEjXOxICldLL28oZQ"
+                            target="_blank" rel="noopener noreferrer">Intro Manual</a>
+                        <p>
+                            This manual is designed to <strong>inform workshop leaders on what the DISCO is,</strong>
+                            provide some background
+                            knowledge on speculative fiction and inclusive design (as well as further suggested
+                            readings),
+                            and <strong>explain how to facilitate a DISCO jam</strong> with the help of this toolkit. It
+                            also provided a full
+                            introduction to toolkit materials.
+                        </p>
+                    </div>
                     <img src="./assets/placeholder.png" alt="">
                 </article>
                 <article class="resource-card">
-                    <a href="https://docs.google.com/presentation/d/1yCPcAucdtMjs1eBA7h0Tyi1Sl4INaebZjph4iEcR8mk"
-                        target="_blank" rel="noopener noreferrer">Workshop Slides</a>
-                    <p>
-                        We built this <strong>slide deck as a suggested way to both kick off and close out a DISCO
-                            design jam.</strong>
-                        It is meant to be a brief introduction to key concepts that will help participants who are new
-                        to inclusive design and guide design reflections at the end to ensure useful takeaways.
-                    </p>
+                    <div class="resource-card-content">
+                        <a href="https://docs.google.com/presentation/d/1yCPcAucdtMjs1eBA7h0Tyi1Sl4INaebZjph4iEcR8mk"
+                            target="_blank" rel="noopener noreferrer">Workshop Slides</a>
+                        <p>
+                            We built this <strong>slide deck as a suggested way to both kick off and close out a DISCO
+                                design jam.</strong>
+                            It is meant to be a brief introduction to key concepts that will help participants who are
+                            new
+                            to inclusive design and guide design reflections at the end to ensure useful takeaways.
+                        </p>
+                    </div>
                     <img src="./assets/placeholder.png" alt="">
                 </article>
                 <article class="resource-card">
-                    <a href="https://drive.google.com/drive/folders/12EgWWC5bPKf7smv2ctjTNvsiY_U4sP3Y" target="_blank"
-                        rel="noopener noreferrer">Access Need Pamphlet</a>
-                    <p>
-                        There are <strong>four access needs pamphlets in the toolkit</strong> (sensory, communication,
-                        body/mobility,
-                        brain/mind), <strong>to help workshop leaders who are new to the topic learn about
-                            accessibility.</strong>
-                    </p>
+                    <div class="resource-card-content">
+                        <a href="https://drive.google.com/drive/folders/12EgWWC5bPKf7smv2ctjTNvsiY_U4sP3Y"
+                            target="_blank" rel="noopener noreferrer">Access Need Pamphlet</a>
+                        <p>
+                            There are <strong>four access needs pamphlets in the toolkit</strong> (sensory,
+                            communication,
+                            body/mobility,
+                            brain/mind), <strong>to help workshop leaders who are new to the topic learn about
+                                accessibility.</strong>
+                        </p>
+                    </div>
                     <img src="./assets/placeholder.png" alt="">
                 </article>
             </div>
@@ -207,5 +271,13 @@
         </p>
     </footer>
 </body>
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+</script>
 
 </html>
