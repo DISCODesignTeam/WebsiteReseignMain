@@ -14,7 +14,6 @@
 .credits-section h3 {
     text-align: center;
     font-size: 2em;
-    font-family: 'Montserrat', sans-serif;
     font-weight: normal;
 }
 
@@ -34,7 +33,6 @@
 #team .team-grid .team-card span {
     padding: 0;
     margin-bottom: 1em;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 1.25em;
     color: var(--black);

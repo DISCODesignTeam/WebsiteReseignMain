@@ -19,7 +19,6 @@
 .sub-nav ul li a {
     color: var(--lighter-blue);
     font-weight: 500;
-    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
 }
 
@@ -69,7 +68,6 @@
 }
 
 .persona-card span {
-    font-family: 'Montserrat', sans-serif;
     line-height: 1em;
     min-height: 2em; 
     display: flex;
@@ -106,12 +104,11 @@
     color: var(--lighter-blue);
     border-radius: 8px;
     margin-top: 2em;
-    font-family: 'Montserrat', sans-serif;
 }
 
 #rulebook .rulebook-resources {
     display: flex;
-    gap: 2em;
+    gap: 4em;
     justify-content: space-around;
 }
 
@@ -130,7 +127,6 @@
     background-color: var(--dark-teal);
     color: var(--lighter-blue);
     border-radius: 8px;
-    font-family: 'Montserrat', sans-serif;
 }
 
 @media (max-width: 768px) {

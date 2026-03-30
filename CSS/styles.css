@@ -4,8 +4,8 @@
 @import url('./contact.css');
 
 
-/* color variables */
 :root {
+    /* color variables */
     --black: #1a1d1f;
     --dark-teal: #072a36;
     --light-blue: #a4c3c6;
@@ -15,29 +15,51 @@
     --teal: #00596b;
     --red: #b04022;
     --off-white: #fff5e4;
+
+
+    /* font variables */
+    --ff-heading: 'Exo', sans-serif;
+    --ff-subheading: 'Exo', sans-serif;
+    --ff-body: 'Nunito', sans-serif;
+
+    --fw-heading: 900;
+    --fw-subheading: 500;
+    --fw-body: 400;
+
+    --fs-heading: 32pt;
+    --fs-subheading: 24pt;
+    --fs-body: 12pt;
+
+    --font-heading: normal var(--fw-heading) var(--fs-heading) var(--ff-heading);
+    --font-subheading: normal var(--fw-subheading) var(--fs-subheading) var(--ff-subheading);
+    --font-body: normal var(--fw-body) var(--fs-body) var(--ff-body);
 }
 
-/* font variables */
+main {
+    max-width: 70em;
+    margin: 0 auto;
+}
+
 h1 {
     text-align: center;
-    font-family: "Poppins", sans-serif;
-    font-size: 4.375em;
-    font-weight: normal;
+    font: var(--font-heading);
     margin-bottom: 0.313em;
     color: var(--black);
 }
 
 h2 {
-    font-family: "Poppins", sans-serif;
+    font: var(--font-subheading);
     color: var(--black);
-    padding: 0 2em;
 }
 
 p {
-    font-family: "Montserrat", sans-serif;
+    font: var(--font-body);
     color: var(--black);
     line-height: 1.5em;
-    padding: 0 2em;
+}
+
+a {
+    font: var(--font-body);
 }
 
 /* reset */
@@ -62,19 +84,18 @@ body {
     display: flex;
     align-items: center;
     color: var(--off-white);
-    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
 }
 
 #main-nav a strong {
-    font-size: x-large;
+    font: var(--font-heading);
 }
 
 #main-nav #menu-toggle {
     display: none;
     background: none;
     border: none;
-    color: #fff5e4;
+    color: var(--off-white);
     font-size: 2em;
     cursor: pointer;
     margin-left: auto;
@@ -112,13 +133,6 @@ body {
 }
 
 /* hero */
-.hero h1 {
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-weight: normal;
-    color: var(--dark-teal);
-}
-
 .hero .hero-image {
     display: block;
     margin: 0 auto;
@@ -147,6 +161,7 @@ body {
     color: var(--black);
     border-radius: 20px;
     margin: 0;
+    padding: 0 2em;
 }
 
 .content-section .card .card-content a {
@@ -163,8 +178,6 @@ body {
     display: inline-block;
     background-color: var(--black);
     color: var(--lighter-blue);
-    font-family: "Montserrat", sans-serif;
-    font-size: 14pt;
     padding: 1em;
     border-radius: 20px;
     text-decoration: none;
