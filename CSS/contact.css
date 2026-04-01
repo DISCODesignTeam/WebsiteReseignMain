@@ -6,15 +6,14 @@
 
 .credits-section h2 {
     text-align: center;
-    font-size: 5em;
-    font-weight: normal;
+    font-size: 4em;
     margin-bottom: 0;
 }
 
 .credits-section h3 {
     text-align: center;
+    font: var(--font-body);
     font-size: 2em;
-    font-weight: normal;
 }
 
 #team .team-grid {
@@ -28,13 +27,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1em;
 }
 
 #team .team-grid .team-card span {
     padding: 0;
     margin-bottom: 1em;
-    font-weight: 600;
-    font-size: 1.25em;
+    font: var(--font-body);
     color: var(--black);
 }
 
