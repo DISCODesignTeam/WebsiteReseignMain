@@ -11,8 +11,8 @@
  * Blue: original, lighter
  */
 
-    --light-blue: #a4c3c6;
-    /* --light-blue: #c1d6d8; */
+    /* --light-blue: #a4c3c6; */
+    --light-blue: #c1d6d8;
 
     --lighter-blue: #ebf5f5;
     --purple: #5e3a4d;
@@ -85,7 +85,7 @@ ul {
 }
 
 body {
-    background-color: var(--light-blue);
+    background-color: var(--lighter-blue);
     margin: 8px;
 }
 
@@ -193,7 +193,7 @@ body {
 
 .content-section .card .card-content {
     flex: 1;
-    background-color: var(--lighter-blue);
+    background-color: var(--light-blue);
     color: var(--black);
     border-radius: 20px;
     margin: 0;
@@ -266,7 +266,7 @@ footer a {
         font-size: 2em;
         background: none;
         border: none;
-        color: var(--off-white);
+        color: var(--lighter-blue);
         cursor: pointer;
         align-self: center;
     }
@@ -293,7 +293,7 @@ footer a {
     }
 
     #main-nav .nav-links li a {
-        color: var(--off-white);
+        color: var(--lighter-blue);
     }
 
     .hero .hero-image {
