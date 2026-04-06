@@ -4,6 +4,10 @@
     max-width: 65em;
 }
 
+.credits-section a {
+    color: var(--red);
+}
+
 .credits-section h2 {
     text-align: center;
     font-size: 4em;
@@ -35,6 +39,11 @@
     margin-bottom: 1em;
     font: var(--font-body);
     color: var(--black);
+}
+
+#team .team-grid .team-card strong {
+    font:var(--font-body);
+    font-weight: bolder;
 }
 
 #team .team-grid .team-card img {
