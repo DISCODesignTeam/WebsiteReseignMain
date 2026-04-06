@@ -8,12 +8,28 @@
     /* color variables */
     --black: #1a1d1f;
     --dark-teal: #072a36;
-    --light-blue: #a4c3c6;
-    --lighter-blue: #ebf5f5;
 
+    /*
+     * Blue: original, lighter
+     */
+
+    --light-blue: #a4c3c6;
+    /* --light-blue: #c1d6d8; */
+
+    --lighter-blue: #ebf5f5;
     --purple: #5e3a4d;
     --teal: #00596b;
+
+    /*
+     * Red: original, lighter, darker
+     */
+
     --red: #b04022;
+    /* --red: #E26D46; */
+    /* --red: #A62E0C; */
+
+    --light-orange: #e26d26;
+
     --off-white: #fff5e4;
 
 
@@ -22,12 +38,15 @@
     --ff-subheading: 'Exo', sans-serif;
     --ff-body: 'Nunito', sans-serif;
 
+    --ff-montserrat: 'Montserrat', sans-serif;
+    --ff-poppins: 'Poppins', sans-serif;
+
     --fw-heading: 900;
     --fw-subheading: 500;
     --fw-body: 400;
 
     --fs-heading: 32pt;
-    --fs-subheading: 24pt;
+    --fs-subheading: 20pt;
     --fs-body: 12pt;
 
     --font-heading: normal var(--fw-heading) var(--fs-heading) var(--ff-heading);
@@ -45,7 +64,7 @@ h1 {
     font: var(--font-heading);
     font-size: 4.375em;
     margin-bottom: 0.5em;
-    color: var(--black);
+    color: var(--dark-teal);
 }
 
 h2 {
@@ -84,7 +103,7 @@ body {
 #main-nav a {
     display: flex;
     align-items: center;
-    color: var(--off-white);
+    color: var(--lighter-blue);
     text-decoration: none;
 }
 
@@ -97,7 +116,7 @@ body {
     display: none;
     background: none;
     border: none;
-    color: var(--off-white);
+    color: var(--lighter-blue);
     font-size: 2em;
     cursor: pointer;
     margin-left: auto;
@@ -152,10 +171,18 @@ body {
 .content-section .card {
     display: flex;
     gap: 2.5em;
+    align-items: stretch;
+}
+
+.content-section .card .card-image {
+    display: flex;
 }
 
 .content-section .card .card-image img {
     border-radius: 1.875em;
+    display: block;
+    height: 100%;
+    width: auto;
 }
 
 .content-section .card .card-content {
@@ -163,7 +190,7 @@ body {
     color: var(--black);
     border-radius: 20px;
     margin: 0;
-    padding: 0 2em;
+    padding: 0 3em;
 }
 
 .content-section .card .card-content a {
@@ -197,15 +224,19 @@ footer {
     max-width: 112.5em;
     margin: 0 auto;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer p {
     color: var(--lighter-blue);
+    max-width: 70em;
 }
 
 footer a {
     text-decoration: underline;
-    color: var(--red);
+    color: var(--light-orange);
 }
 
 @media (max-width: 768px) {
@@ -262,6 +293,16 @@ footer a {
     .content-section .card {
         flex-direction: column;
         align-items: center;
+    }
+
+    .content-section .card .card-image {
+        display: block;
+    }
+
+    .content-section .card .card-image img {
+        height: auto;
+        width: 100%;
+        max-width: 100%;
     }
 
     .content-section-reversed .card {
