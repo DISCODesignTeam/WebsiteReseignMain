@@ -81,7 +81,7 @@
 }
 
 .persona-card .background {
-    background-color: var(--off-white);
+    background-color: var(--lighter-blue);
     border-radius: 8px;
     padding: 1em;
 }
