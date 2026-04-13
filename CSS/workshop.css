@@ -1,7 +1,8 @@
 .sub-nav ul {
     display: flex;
     justify-content: space-around;
-    margin: 5em 0 0 0;
+    margin: 4em 2.5em 0 2.5em;
+    padding: 0;
     gap: 2em;
 }
 
@@ -11,9 +12,12 @@
     border-radius: 8px;
     flex: 1;
     align-items: center;
-    min-width: 5.5em;
-    max-width: 12em;
+    width: calc(33.333% - 1.5em);
     text-align: center;
+}
+
+.sub-nav ul li:hover {
+    background-color: rgb(from var(--teal) r g b / 0.8);
 }
 
 .sub-nav ul li a {
@@ -47,6 +51,8 @@
     gap: 1em;
     flex: 0 1 calc(33.333% - 1.5em);
     max-width: calc(33.333% - 1.5em);
+    text-decoration: none;
+    color: inherit;
 }
 
 #ship-cards .ship-cards-grid {
@@ -64,6 +70,8 @@
     flex-direction: column;
     align-items: center;
     gap: 1em;
+    text-decoration: none;
+    color: inherit;
 }
 
 .persona-card span {
@@ -76,7 +84,7 @@
     line-height: 1;
 }
 
-.persona-card span a {
+.persona-card span strong {
     color: var(--red);
     text-decoration: none;
     line-height: 1.2;
@@ -114,9 +122,13 @@
     margin-top: 2em;
 }
 
+#general-ship-systems:hover {
+    background-color: rgb(from var(--teal) r g b / 0.8);
+}
+
 #rulebook .rulebook-resources {
     display: flex;
-    gap: 4em;
+    gap: 2em;
     justify-content: space-around;
 }
 
@@ -137,12 +149,20 @@
     border-radius: 8px;
 }
 
+#rulebook .rulebook-resources .resource-card a:hover {
+    background-color: rgb(from var(--teal) r g b / 0.8);
+}
+
 @media (max-width: 768px) {
+    .sub-nav {
+        margin: 2em 1em;
+    }
     .sub-nav ul {
         flex-direction: column;
         align-items: center;
         gap: 1em;
-        padding: 2em 1em;
+        padding: 1em 1em;
+        margin: 0;
     }
 
     .sub-nav ul li {
@@ -150,13 +170,27 @@
         max-width: none;
     }
 
+    #crew-persona-cards {
+        margin: 2em 1em;
+        padding: 0;
+        padding-left: 0.5em;
+    }
+
     #crew-persona-cards .persona-card {
         flex: 0 1 calc(50% - 1em);
         max-width: calc(50% - 1em);
     }
 
-    #ship-cards .ship-cards-grid {
-        grid-template-columns: 1fr;
+    #ship-cards {
+        margin: 2em 1em;
+        padding: 0;
+        padding-left: 0.5em;
+    }
+
+    #rulebook {
+        margin: 2em 1em;
+        padding: 0;
+        padding-left: 0.5em;
     }
 
     #rulebook .rulebook-resources {
@@ -167,5 +201,16 @@
     #rulebook .rulebook-resources .resource-card {
         width: 100%;
         max-width: none;
+    }
+}
+
+@media (max-width: 560px) {
+    #crew-persona-cards .persona-card {
+        flex: 0 1 100%;
+        max-width: 100%;
+    }
+
+    #ship-cards .ship-cards-grid {
+        grid-template-columns: 1fr;
     }
 }

@@ -148,7 +148,7 @@ body {
 }
 
 #main-nav ul li:hover {
-    background-color: rgb(from var(--teal) r g b / 0.8);
+    background-color: rgb(from var(--light-blue) r g b / 0.9);
 }
 
 #disco-logo {
@@ -181,6 +181,11 @@ body {
     color: var(--dark-teal);
     flex: 1 1 280px;
 }
+
+.hero-title-mobile {
+    display: none;
+}
+
 
 .hero-card .hero-image {
     display: block;
@@ -325,6 +330,10 @@ footer a {
         font-size: 2.5em;
     }
 
+    h2 {
+        font-size: 1.25em;
+    }
+
     #main-nav {
         flex-direction: row;
         flex-wrap: wrap;
@@ -364,6 +373,10 @@ footer a {
         background-color: var(--dark-teal);
     }
 
+    #main-nav ul li:hover {
+        background-color: rgb(from var(--teal) r g b / 0.8);
+    }
+
     #main-nav .nav-links li a {
         color: var(--lighter-blue);
     }
@@ -383,8 +396,16 @@ footer a {
         margin: 0;
     }
 
+    .hero-title-desktop {
+        display: none;
+    }
+
+    .hero-title-mobile {
+        display: block;
+    }
+
     .hero-card .hero-image {
-        width: min(100%, 160px);
+        width: min(20%, 160px);
     }
 
     .content-section {
