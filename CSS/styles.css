@@ -148,7 +148,7 @@ body {
 }
 
 #main-nav ul li:hover {
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgb(from var(--teal) r g b / 0.8);
 }
 
 #disco-logo {
@@ -177,7 +177,7 @@ body {
     margin: 0;
     padding: 0;
     font: var(--font-heading);
-    font-size: 4.375em;
+    font-size: 4.37em;
     color: var(--dark-teal);
     flex: 1 1 280px;
 }
@@ -250,7 +250,7 @@ body {
 }
 
 .scroll-to-top a:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgb(from var(--teal) r g b / 0.8);
 }
 
 footer {
@@ -275,6 +275,50 @@ footer a {
     color: var(--light-orange);
 }
 
+@media (max-width: 980px) {
+    #main-nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.625em 1em;
+    }
+
+    #main-nav #menu-toggle {
+        display: block;
+        font-size: 2em;
+        background: none;
+        border: none;
+        color: var(--lighter-blue);
+        cursor: pointer;
+        align-self: center;
+    }
+
+    #main-nav .nav-links {
+        width: 100%;
+        flex-direction: column;
+        order: 3;
+        gap: 1em;
+        margin-top: 1em;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+    }
+
+    #main-nav .nav-links.active {
+        max-height: 31.25em;
+        opacity: 1;
+        display: flex;
+    }
+
+    #main-nav .nav-links li {
+        background-color: var(--dark-teal);
+    }
+
+    #main-nav .nav-links li a {
+        color: var(--lighter-blue);
+    }
+}
 
 @media (max-width: 768px) {
     h1 {
@@ -329,18 +373,18 @@ footer a {
     }
 
     .hero-card {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 1rem;
+        justify-content: center;
     }
 
     .hero-title {
-        text-align: center;
+        flex: 0 0 auto;
+        font-size: clamp(2rem, 8vw, 3rem);
+        line-height: 1.1;
+        margin: 0;
     }
 
     .hero-card .hero-image {
-        width: min(100%, 280px);
+        width: min(100%, 160px);
     }
 
     .content-section {
