@@ -87,15 +87,22 @@ ul {
 
 body {
     background-color: var(--light-blue);
-    margin: 8px;
+    margin: 0;
 }
 
 /* nav */
 #main-nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: var(--dark-teal);
     padding: 1em;
+}
+
+#main-nav .disco-title,
+#main-nav .disco-title a {
+    display: flex;
+    align-items: center;
 }
 
 #main-nav a {
@@ -117,9 +124,7 @@ body {
     color: var(--lighter-blue);
     font-size: 2em;
     cursor: pointer;
-    margin-left: auto;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: 0 0 0 auto;
 }
 
 #main-nav .nav-links {
@@ -130,24 +135,21 @@ body {
     padding: 0;
 }
 
-#main-nav .nav-links li {
-    padding: 0.5em;
-    background-color: var(--lighter-blue);
-    border-radius: 8px;
+#main-nav .nav-links li a {
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 8px;
+    background-color: var(--lighter-blue);
+    padding: 0.5em 1.2em;
+    color: var(--dark-teal);
+    font-weight: 500;
     min-width: 5.5em;
     text-align: center;
 }
 
-#main-nav .nav-links li a {
-    color: var(--dark-teal);
-    font-weight: 500;
-}
-
-#main-nav ul li:hover {
+#main-nav ul li a:hover {
     background-color: rgb(from var(--light-blue) r g b / 0.9);
 }
 
@@ -286,7 +288,7 @@ footer a {
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
-        padding: 0.625em 1em;
+        padding: 1em;
     }
 
     #main-nav #menu-toggle {
@@ -304,7 +306,7 @@ footer a {
         flex-direction: column;
         order: 3;
         gap: 1em;
-        margin-top: 1em;
+        margin-top: 0;
         max-height: 0;
         opacity: 0;
         overflow: hidden;
@@ -314,6 +316,7 @@ footer a {
         max-height: 31.25em;
         opacity: 1;
         display: flex;
+        margin-top: 1em;
     }
 
     #main-nav .nav-links li {
@@ -339,7 +342,7 @@ footer a {
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
-        padding: 0.625em 1em;
+        padding: 1em;
     }
 
     #main-nav #menu-toggle {
@@ -357,7 +360,7 @@ footer a {
         flex-direction: column;
         order: 3;
         gap: 1em;
-        margin-top: 1em;
+        margin-top: 0;
         max-height: 0;
         opacity: 0;
         overflow: hidden;
@@ -367,6 +370,7 @@ footer a {
         max-height: 31.25em;
         opacity: 1;
         display: flex;
+        margin-top: 1em;
     }
 
     #main-nav .nav-links li {
