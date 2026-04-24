@@ -1,26 +1,33 @@
 .sub-nav ul {
     display: flex;
     justify-content: space-around;
-    margin: 5em 0 0 0;
+    margin: 4em 2.5em 0 2.5em;
+    padding: 0;
     gap: 2em;
 }
 
 .sub-nav ul li {
-    padding: 1em 0.5em;
-    background-color: var(--dark-teal);
-    border-radius: 8px;
     flex: 1;
-    align-items: center;
-    min-width: 5.5em;
-    max-width: 12em;
-    text-align: center;
+    min-width: 0;
 }
 
 .sub-nav ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1em 1.25em;
+    background-color: var(--dark-teal);
+    border-radius: 8px;
+    text-align: center;
     color: var(--lighter-blue);
     font-weight: 500;
-    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
+}
+
+.sub-nav ul li a:hover {
+    background-color: rgb(from var(--teal) r g b / 0.8);
 }
 
 .workshop-section {
@@ -43,12 +50,13 @@
 }
 
 #crew-persona-cards .persona-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-rows: clamp(2.8rem, 2.3rem + 0.9vw, 3.6rem) auto;
     gap: 1em;
     flex: 0 1 calc(33.333% - 1.5em);
     max-width: calc(33.333% - 1.5em);
+    text-decoration: none;
+    color: inherit;
 }
 
 #ship-cards .ship-cards-grid {
@@ -65,25 +73,35 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1em
+    gap: 1em;
+    text-decoration: none;
+    color: inherit;
 }
 
 .persona-card span {
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1em;
-    min-height: 2em; 
+    margin: 0;
+    height: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
+    text-align: center;
+    line-height: 1;
 }
 
-.persona-card span a {
+.persona-card span strong {
     color: var(--red);
     text-decoration: none;
+    line-height: 1.2;
+    font-size: clamp(0.94rem, 0.88rem + 0.25vw, 1.05rem);
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .persona-card .background {
-    background-color: var(--off-white);
+    background-color: var(--lighter-blue);
     border-radius: 8px;
     padding: 1em;
 }
@@ -106,20 +124,23 @@
     color: var(--lighter-blue);
     border-radius: 8px;
     margin-top: 2em;
-    font-family: 'Montserrat', sans-serif;
+}
+
+#general-ship-systems:hover {
+    background-color: rgb(from var(--teal) r g b / 0.8);
 }
 
 #rulebook .rulebook-resources {
-    display: flex;
-    gap: 2em;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 3.5em;
+    align-items: stretch;
 }
 
 #rulebook .rulebook-resources .resource-card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: calc(33.333% - 1.5em);
 }
 
 #rulebook .rulebook-resources .resource-card a {
@@ -130,15 +151,23 @@
     background-color: var(--dark-teal);
     color: var(--lighter-blue);
     border-radius: 8px;
-    font-family: 'Montserrat', sans-serif;
+}
+
+#rulebook .rulebook-resources .resource-card a:hover {
+    background-color: rgb(from var(--teal) r g b / 0.8);
 }
 
 @media (max-width: 768px) {
+    .sub-nav {
+        margin: 2em 1em;
+    }
+
     .sub-nav ul {
         flex-direction: column;
         align-items: center;
         gap: 1em;
-        padding: 2em 1em;
+        padding: 1em 1em;
+        margin: 0;
     }
 
     .sub-nav ul li {
@@ -146,22 +175,53 @@
         max-width: none;
     }
 
+    #crew-persona-cards {
+        margin: 2em 1em;
+        padding: 0;
+        padding-left: 0.5em;
+    }
+
     #crew-persona-cards .persona-card {
         flex: 0 1 calc(50% - 1em);
         max-width: calc(50% - 1em);
     }
 
-    #ship-cards .ship-cards-grid {
-        grid-template-columns: 1fr;
+    #ship-cards {
+        margin: 2em 1em;
+        padding: 0;
+        padding-left: 0.5em;
+    }
+
+    #rulebook {
+        margin: 2em 1em;
+        padding: 0;
+        padding-left: 0.5em;
     }
 
     #rulebook .rulebook-resources {
+        display: flex;
+        gap: 3.5em;
+        justify-content: space-around;
         flex-direction: column;
         align-items: center;
     }
 
     #rulebook .rulebook-resources .resource-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         width: 100%;
         max-width: none;
+    }
+}
+
+@media (max-width: 560px) {
+    #crew-persona-cards .persona-card {
+        flex: 0 1 100%;
+        max-width: 100%;
+    }
+
+    #ship-cards .ship-cards-grid {
+        grid-template-columns: 1fr;
     }
 }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>D.I.S.C.O | Home</title>
+    <title>D.I.S.C.O. | Home</title>
     <link rel="icon" type="image/png" href="./assets/favicon.png">
     <link rel="stylesheet" href="./css/styles.css">
     <!-- Font -->
@@ -13,6 +13,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
 </head>
 
@@ -25,35 +28,44 @@
                     <img src="./assets/disco_logo_nav.png"
                         alt="Our logo: a teal UFO emitting a beam. The top dome of the UFO looks like a disco ball, with sparkles surrounding it."
                         id="disco-logo">
-                    <strong>D.I.S.C.O</strong>
+                    <strong>D.I.S.C.O.</strong>
                 </a>
             </div>
             <button id="menu-toggle" aria-label="Toggle Navigation Menu">☰</button>
             <ul class="nav-links">
+                <li><a href="./index.html">Welcome</a></li>
                 <li><a href="./mission.html">Mission</a></li>
                 <li><a href="./workshop.html">Workshop</a></li>
-                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./credits.html">Credits</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="hero">
+        <!-- <section class="hero">
             <h1>Welcome!</h1>
             <img src="./assets/disco_logo_hero.png" alt="" class="hero-image">
+        </section> -->
+        <section class="hero-section">
+            <div class="hero-card">
+                <h1 class="hero-title hero-title-desktop">Welcome!</h1>
+                <h1 class="hero-title hero-title-mobile">Welcome!</h1>
+                <img src="./assets/disco_logo_hero.png" alt="" class="hero-image">
+            </div>
         </section>
 
         <section class="content-section content-section-reversed">
             <article class="card">
                 <div class="card-image">
-                    <img src="./assets/flavor_images/DISCOpitch.jpg" alt="">
+                    <img src="./assets/flavor_images/DISCOpitch.jpg"
+                        alt="Lynn, a white person in all black with a black mask and Dr. FitzPatrick, a white woman wearing a red blazer with a black shirt and black mask giving a lecture at the front of a classroom.">
                 </div>
                 <div class="card-content">
-                    <h2>Welcome! To the Design, An, Inclusive, Spaceship Collaborative Operation!</h2>
+                    <h2>Welcome! To the Design an Inclusive Spaceship Collaborative Operation (DISCO)!</h2>
                     <p>We are a collaborative design sprint event combining accessibility and speculative design to
                         <strong>imagine inclusive futures!</strong>
                     </p>
                     <p>
-                        If you are at a D.I.S.C.O. and looking for information about crew or ship components please go
+                        If you are at a DISCO and looking for information about crew or ship components please go
                         to our <a href="./workshop.html">workshop</a> section. Otherwise feel free to look through our
                         website to learn more about the
                         project!
@@ -66,18 +78,21 @@
             <article class="card">
                 <div class="card-content">
                     <h2>Mission Statement</h2>
-                    <p>The goal of the D.I.S.C.O. is to introduce our participants to topics of accessibility and universal 
-                        design in a way that is fun and playful. We want to challenge the idea that accessible design is “boring” or 
-                        a daunting topic to learn. We use speculative design and science fiction to replace “it always has been” with “what if?”
-
-
+                    <p>The goal of the DISCO is to introduce our participants to topics of accessibility and
+                        universal
+                        design in a way that is fun and playful. We want to challenge the idea that accessible design is
+                        “boring” or
+                        a daunting topic to learn. We use speculative design and science fiction to replace “it always
+                        has been” with “what if?”
                     </p>
                     <p>
-                        If you wish to know more about the project please go to our Mission section.
+                        If you wish to know more about the project please go to our <a href="./mission.html">Mission</a>
+                        section.
                     </p>
                 </div>
                 <div class="card-image">
-                    <img src="./assets/flavor_images/DISCOC4C.jpg" alt="">
+                    <img src="./assets/flavor_images/DISCOC4Csmaller.jpg"
+                        alt="Three people collaborate at a table in a brightly lit, creative workspace. One person is bent over writing on a large sheet of paper, while two others stand nearby discussing and reviewing materials. The room features colorful chairs, bean bags, and murals on the walls, with a whiteboard and various supplies visible in the background.">
                 </div>
             </article>
         </section>
@@ -85,7 +100,8 @@
         <section class="content-section content-section-reversed">
             <article class="card">
                 <div class="card-image">
-                    <img src="./assets/flavor_images/DISCOFitzPitch.jpg" alt="">
+                    <img src="./assets/flavor_images/DISCOFitzPitch.jpg"
+                        alt="A group of people sit around a table working on the D.I.S.C.O. workshop, with one person using a wheelchair actively writing on pink paper. Another person in a red jacket and mask stands nearby, observing the working group. The room is filled with colorful chairs, a large screen displaying project instructions, and various supplies and equipment on shelves in the background.">
                 </div>
                 <div class="card-content">
                     <h2>Run Your Own - Workshop</h2>
@@ -95,7 +111,8 @@
                     <p>
                         This first toolkit version is a “high fidelity prototype,” to get at the feel of a DISCO kit.
                         <strong>If
-                            you are still interested in running a DISCO go to our <a href="./workshop.html">Workshop</a>
+                            you are still interested in running a DISCO go to our <a
+                                href="./workshop.html#rulebook">Workshop</a>
                             section if you are interested in
                             running your own DISCO!</strong> And please fill our our <a
                             href="https://docs.google.com/forms/d/e/1FAIpQLSc-ud5Qd9XQoSiMCBMKQgDAVaNiRkUVQT97r6BSzaAqukfbaQ/viewform?usp=dialog"
@@ -114,17 +131,23 @@
                 <div class="card-content">
                     <h2>Meet The Team</h2>
                     <p>
-                        A project as large and special as D.I.S.C.O. could not be realized without the assistance of our dedicated team and wonderful 
-                        co-designers. 
-                        <strong>If you would like to get in touch with the DISCO or learn more about our team, supporters or co-designers, please 
-                        go to our <a href="./contact.html">Contact</a> section.</strong> 
-                        We are truly grateful for every person that is currently or has been involved in the DISCO, and are proud to highlight their accomplishments.
+                        A project as large and special as DISCO could not be realized without the assistance of our
+                        dedicated team and wonderful
+                        co-designers.
+                        <strong>If you would like to get in touch with the DISCO or learn more about our team,
+                            supporters or co-designers, please
+                            go to our <a href="./credits.html">Credits</a> section.</strong>
+                        We are truly grateful for every person that is currently or has been involved in the DISCO, and
+                        are proud to highlight their accomplishments.
                     </p>
                     <p>
+                        Have a more specific question? or want the DISCO to tour to your event? contact us at
+                        <a href="mailto:jlf115@pitt.edu">jlf115[at]pitt[dot]edu</a>
                     </p>
                 </div>
                 <div class="card-image">
-                    <img src="./assets/flavor_images/DISCOolLarge.png" alt="">
+                    <img src="./assets/flavor_images/DISCOolLarge.png"
+                        alt="A large group of people, two of them using wheelchairs, are gathered around tables in a collaborative workspace. They are wearing face masks and appear engaged in discussion or working on laptops. The room has green walls, whiteboards, and a glass wall showing a modern makerspace with 3D printers and various colorful models on display.">
                 </div>
             </article>
         </section>

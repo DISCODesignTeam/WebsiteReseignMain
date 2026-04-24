@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>D.I.S.C.O | Mission</title>
+    <title>D.I.S.C.O. | Mission</title>
     <link rel="icon" type="image/png" href="./assets/favicon.png">
     <link rel="stylesheet" href="./css/styles.css">
     <!-- Font -->
@@ -14,9 +14,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
+<body class="page-mission">
     <a id="top"></a>
     <header>
         <nav id="main-nav" aria-label="Main navigation">
@@ -25,21 +28,29 @@
                     <img src="./assets/disco_logo_nav.png"
                         alt="Our logo: a teal UFO emitting a beam. The top dome of the UFO looks like a disco ball, with sparkles surrounding it."
                         id="disco-logo">
-                    <strong>D.I.S.C.O</strong>
+                    <strong>D.I.S.C.O.</strong>
                 </a>
             </div>
             <button id="menu-toggle" aria-label="Toggle Navigation Menu">☰</button>
             <ul class="nav-links">
+                <li><a href="./index.html">Welcome</a></li>
                 <li><a href="./mission.html">Mission</a></li>
                 <li><a href="./workshop.html">Workshop</a></li>
-                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./credits.html">Credits</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="hero">
+        <!-- <section class="hero">
             <h1>Mission Statement</h1>
             <img src="./assets/disco_logo_hero.png" alt="" class="hero-image">
+        </section> -->
+        <section class="hero-section">
+            <div class="hero-card">
+                <h1 class="hero-title hero-title-desktop">Mission Statement</h1>
+                <h1 class="hero-title hero-title-mobile">Mission</h1>
+                <img src="./assets/disco_logo_hero.png" alt="" class="hero-image">
+            </div>
         </section>
 
         <section class="content-section content-section--grid">
@@ -79,7 +90,7 @@
         </section>
 
         <section class="content-section">
-            <article class="card card--reverse">
+            <article class="card card--reverse card--with-stack">
                 <div class="card-content">
                     <h2>About the Project</h2>
                     <p>The “Design a Spaceship” workshop, run annually since 2023, is a speculative and inclusive design
@@ -115,17 +126,19 @@
                 </div>
                 <div class="card-image-stack">
                     <div class="card-image">
-                        <img src="./assets/placeholder.png" alt="">
+                        <img src="./assets/flavor_images/CorridorCapstone.jpg"
+                            alt="A page of design notes for a boarding corridor. The drawing features a telescoping boarding corridor puncturing an enemy ship, the page is covered in notes outlining plans for an RFID ID system for blocking or allowing entrance.">
                     </div>
                     <div class="card-image">
-                        <img src="./assets/placeholder.png" alt="">
+                        <img src="./assets/flavor_images/SurusationAbduction.jpg"
+                            alt="A whiteboard drawing of Surrustation being abducted by the disco Logo, a cut in on the top right shows a mischievous Byte is behind the controls of the UFO">
                     </div>
                 </div>
             </article>
         </section>
 
         <section class="content-section">
-            <article class="card">
+            <article class="card card--with-stack">
                 <div class="card-content">
                     <h2>Future Scaling</h2>
                     <p>The practice of access and inclusion is iterative, imperfect, and never truly done. Therefore,
@@ -163,10 +176,12 @@
                 </div>
                 <div class="card-image-stack">
                     <div class="card-image">
-                        <img src="./assets/placeholder.png" alt="">
+                        <img src="./assets/flavor_images/uniformsC4Cevent.jpg"
+                            alt="A page of notes on uniforms taken from a disco session. Red markers on a large white sheet of paper outline ideas for 3d printed haptic uniforms for Surrustation and Garrick.">
                     </div>
                     <div class="card-image">
-                        <img src="./assets/placeholder.png" alt="">
+                        <img src="./assets/flavor_images/UniformsCapstone.jpg"
+                            alt="A page of pirate uniform designs from a disco session. Beebul is wearing a skull mask that its pink tendrils lazily drift out from, Terra wears a pink bandanna and grey vest, one of her Bytes is drawn wearing a pirate hat with a stylized logo of Beebul’s mask.">
                     </div>
                 </div>
             </article>
