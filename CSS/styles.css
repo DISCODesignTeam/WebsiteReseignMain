@@ -266,7 +266,7 @@ footer {
     padding: 2.75em 1.5em;
     max-width: 112.5em;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -275,11 +275,13 @@ footer {
 footer p {
     color: var(--lighter-blue);
     max-width: 70em;
+    font-size: 0.85em;
 }
 
 footer a {
     text-decoration: underline;
     color: var(--light-orange);
+    font-size: 0.85em;
 }
 
 @media (max-width: 980px) {
