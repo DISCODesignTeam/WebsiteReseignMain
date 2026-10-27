@@ -45,7 +45,7 @@
     color: var(--red);
     font-weight: bold;
     line-height: 1.2;
-    font-size: clamp(0.95rem, 0.9rem + 0.2vw, 1.05rem);
+    font-size: clamp(1.1rem, 1.0rem + 0.3vw, 1.25rem);
     display: -webkit-box;
     line-clamp: 2;
     -webkit-line-clamp: 2;
